@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- website title -->
+    <title>Beneath The Surface</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- Style sheets and JS links and packages -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <!-- landing page -->
+    <main>
+      <h1 id="main_heading" class="hidden">BENEATH THE SURFACE</h1>
+      <h2 id="main_subheading" class="hidden">A Deep Dive Into the Plastic Peril of the Seas</h2>
+      <!-- image container to keep bg and foreground image -->
+      <div class="image-container-0">
+        <img src="assets/dolphin_swim_edit.png" , id="bg_image" />
+        <div class='bottle_wave_container'>
+          <img src="assets/bottle_wave2.png" id="bottle_wave" />
+        </div>
+        <p class="para hidden" id="tagline_home">
+          <i>
+            <!-- quote -->
+            <span class="quotes">"</span>Water, the essential fluid on which
+            all life depends, has become a global garbage can<span
+              class="quotes">"</span></i>
+          <br /><br />
+          -Jacques Cousteau
+        </p>
+      </div>
+    </main>
+    <section id="section1">
+      <h1 class="centered_header hidden">It's Going up</h1>
+      <p class="para hidden" id="section1_para">
+        Plastic production has been increasing at an alarming rate since the
+        1950s. Unsurprisingly so has macro and micro plastics found in our
+        oceans. Plastic can take up to one thousand years to degrade completely.
+        So, yes almost every piece of plastic us humans have ever generated
+        still exists as plastic somewhere in the world. Once some of those
+        pieces begin sneaking into the world’s oceans they tend to stay there.
+        The vastness and depths of the world’s oceans makes plastic almost
+        impossible to identify, let alone recover.
+        <br /><br />
+        The amount of plastic pumped into the ocean is almost incomprehensible.
+        In 2015, the macro plastic found in the world’s oceans is estimated to
+        be the equivalent weight of a fleet of 5000 Boeing 747s. That’s more
+        than quadruple the amount of 747s that have ever even been built.
+      </p>
+      <!-- graph 1 along with animation class -->
+      <div class="graph_container1 hidden">
+        <div id="line_graph"></div>
+      </div>
+    </section>
+    <section id="section2">
+      <div id="section2_left-side">
+        <!-- dolphin image split into two -->
+        <div class="image-container-1">
+          <img src="assets/dolphin_bottom.png" id="dolphin_top" />
+          <img src="assets/dolphin_top.png" id="dolphin_bottom" />
+        </div>
+      </div>
+      <div id="section2_right-side">
+        <!-- countup of 100,000, with animation classes -->
+        <div class="value hidden" akhi="100000" id="section2_title">0</div>
+        <p class="para hidden" id="section2_para">
+          <b><span class='marine_animals'>Marine mammals die each year from the ingestion or entanglement in
+          plastic.</span></b>
+          <br /><br />
+          Plastic kills.
+          <br /><br />
+          Plastic often does not breakdown completely for hundreds of years,
+          Plastic tends to fragment into multiple pieces, Plastic can be in the
+          shape of food or prey for larger marine animals.
+          <br /><br />
+          Plastic is malicious in the ocean and has the ability to harm almost
+          every creature in the marine food-chain. In fact, it is estimated that
+          56% of the world’s marine animal species have previously consumed
+          plastic.
+          <br /><br />
+          Furthermore, high concentrations of plastic in the ocean have also
+          been linked to higher levels of coral bleaching, which puts
+          strain on primary producers and in turn the entire marine food
+          web.
+        </p>
+      </div>
+    </section>
+    <section class='section3'>
+      <h1 class="centered_header hidden">PHILIPPINES AT FAULT</h1>
+      <p class="para hidden" id="section3_para">
+        The two biggest global producers of plastic waste as one might expect
+        are in fact China and the US. However, these two heavily industrialised
+        countries seem to have some semblance of a waste management system which
+        prevents too much waste being emitted to the world’s oceans.
+        When we look at the biggest emitters of plastic to the ocean,
+        unexpectedly we find that the <b><span style='color:#2EC4B6' #BA5624>Philippines account for over one third of
+        the entire global share (36.4%).</span></b> For a country which accounts for under
+        2% of the global population and less than 1% of the global landmass,
+        this is certainly a surprising finding.
+        <br /><br />
+        It seems to be a perfect (or imperfect) storm of factors that contribute
+        to this staggering figure. First of all, excess amounts of plastic are
+        used to package almost every product bought in the Philippines. Poor waste management
+        services and a lack of enforcement for dumping means that a large amount
+        of this waste is discarded in an irresponsibly way.
+        <br /><br />
+        Furthermore Being a nation of islands, most large population centres naturally live
+        along some section of coastline. Many of these populations are slums
+        without access to any type of waste collection services. Dumping rubbish
+        into rivers and the ocean is often the only choice left for these low
+        socio-economic communities.
+      </p>
+      <!-- chloropleth graph -->
+      <div id='chloropleth_container' class='hidden'>
+        <div id="choropleth_2"></div>
+      </div>
+    </section>
+    <section id="section4">
+      <h1 class="centered_header hidden">PLASTIC POURING FROM THE PASIG</h1>
+      <div id="section4_flex">
+        <!-- bar graph of polluting rivers -->
+        <div id="polluting_river" class="hidden" style="width: 75%; height: 500px"></div>
+        <p class="para hidden" id="section4_para">
+          Plastic pollution in the ocean is significantly linked to the
+          high levels of plastic pollution in Filipino rivers. An astonishing 7
+          out of the 10 most plastic polluting rivers in the world are situated
+          in the Philippines. It is a stretch to even call some of these
+          entities “rivers”; given the sickening amount of plastic which is
+          distributed among these waterways.
+        </p>
+      </div>
+      <p class="para hidden" id="section4_para2">
+        By far the most polluting of these rivers and the most plastic
+        polluting river in the world is the <b><span style='color:#2EC4B6' #BA5624>Pasig River.</span></b> The Pasig River is
+        situated in the center of the Manila (the Filipino capital) metro area and is
+        surrounded by the most industrial areas in all of the Philippines.
+        <!-- external link to interesting article -->
+        Articles like <a id='link1' href='https://en.nytid.no/elven-som-byens-livsblod/'>this</a> use
+        photography to highlight the devastating realities of the communities
+        that live along this river and the extent to the problem.
+    </p>
+      <!-- div container for the labels of the photos -->
+      <div id="pasig_label_container">
+        <div class="horizontal_line"></div>
+        <p id="pasig_river_label">PASIG RIVER</p>
+        <div class="vertical_line"></div>
+      </div>
+      <!-- container to group images -->
+      <div class="image-container-2 hidden">
+        <img src="assets/pasig_river_1.jpg" id="pasig_river_1" />
+        <img src="assets/pasig_river_2.jpeg" id="pasig_river_2" />
+      </div>
+    </section>
+    <section id="section5">
+      <h1 class="centered_header hidden">THE FUTURE</h1>
+      <p class="para hidden" id="section5_para">
+        So, what is being done to address this issue? In 2012, the city of
+        Manila implemented a ban on plastic shopping bags and Styrofoam
+        containers in an effort to curb the masses of plastic waste that was
+        being generated. Other waste management initiatives such as the Plastic
+        Waste Trading Hub have also been established as stations where plastics
+        can be responsibly recycled.
+        <br /><br />
+        However, more can be done. Projections made in 2020 by the Filipino
+        government forecasted up to a 20% increase in waste production between
+        2020-25 in some surrounding areas of the Pasig River in Manilla. The map
+        below shows the top five projections of areas expected to increase waste
+        over these years.
+      </p>
+      <!-- Map of Manilla -->
+      <h2 class="map_title hidden">
+        PROJECTED PERCENTAGE INCREASE OF WASTE FROM 2020-25 IN METRO MANILA
+      </h2>
+      <figure>
+        <img src="assets/map2.png" id="map" class='hidden' />
+        <figcaption style='color: white; text-align: center; opacity: 0.5; font-size: 12px;'>
+          Source: Philippines Government Data hosted on Powerbi</figcaption>
+      </figure>
+    </section>
+    <!-- Call to Action -->
+    <section>
+      <br><br><br>
+      <h1 class="centered_header hidden">HOW CAN YOU HELP</h1>
+      <p class="para hidden" id='charity_para'>
+        There are several ongoing initiatives in the Philippines which are aimed at combating plastic waste in the oceans. The three charities below are especially active in the prevention of plastic waste in the Philippines. <span style='color: #2EC4B6'>There are numerous opportunities to partner with these charities</span> and assist in their efforts.
+      </p>
+      <ul class='para hidden'>
+        <li><span style='color: #2EC4B6'>Marine conservation Philippines</span> has several ongoing initiatives from the creation of an environmental
+          club in local primary schools within effected Filipino areas to replacing styrofoam buoys in the ocean with more
+          sustainable options.</li>
+        <li><span style='color: #2EC4B6'>Oceana Philippines</span> has placed significant pressure on the Filipino
+          government to ban single-use plastic bags and has created several campaigns which have led to legal reform.</li>
+        <li><span style='color: #2EC4B6'>Plastic Oceans</span> have also been involved in numerous global initiatives such as ocean
+          clean-ups and education; some of which have involved the Philippines.</li>
+      </ul>
+      <!-- Container for the charities -->
+      <div class="charities hidden">
+        <a href='https://plasticoceans.org/'><img src="assets/charity1.png" /><figcaption class='fig-cap_charities' id='fig_cap_1'>
+         Plastic Oceans</figcaption></a>
+        <a href='https://www.marineconservationphilippines.org/'><img src="assets/charity2.png" /><figcaption class='fig-cap_charities' id='fig_cap_2'>
+          Marine Conservation</figcaption></a>
+        <a href='https://ph.oceana.org/'><img src="assets/charity3.png" /><figcaption class='fig-cap_charities' id='fig_cap_3'>
+          Oceana</figcaption></a>
+      </div>
+    </section>
+
+    <!-- link to all the scripts -->
+    <script src="js/section1.js"></script>
+    <script src="js/section3.js"></script>
+    <script src="js/section4.js"></script>
+    <script src="js/countup.js"></script>
+    <script src="js/rotate.js"></script>
+    <script src="js/animate_text.js"></script>
+  </body>
+</html>

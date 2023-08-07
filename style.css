@@ -1,0 +1,358 @@
+/* load custom font */
+@font-face {
+    font-family: brownCasalova;
+    src: url('fonts/brown-casalovademo.regular.ttf');
+}
+
+/* Give general styles to text and body elements */
+body{
+    background-color: #081C30;
+}
+
+h1{
+    font-family: brownCasalova;
+}
+
+h1,h2,h3,p{
+    color:white;
+}
+
+#link1{
+    color: white;
+}
+
+#link1:hover{
+    color: rgb(216, 216, 216);
+}
+
+.marine_animals{
+    font-size: 2.7vw;
+    color: #2EC4B6
+}
+
+.value{
+    color: #2EC4B6
+}
+
+/* Create animation for the fade in effect as all the content scrolls */
+.hidden{
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(10%);
+    transition: 1s;
+}
+
+.show{
+    filter: blur(0px);
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.quotes{
+    font-size: 3rem;
+    font-family: 'georgia';
+    opacity: 0;
+}
+
+.image-container-0{
+    margin-top: 0vw;
+    /* margin-left: 8vw; */
+}
+
+/* container for image and quote */
+.image-container-0 #tagline_home{
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    width: 35%;
+    text-align: center;
+    transition-delay: 800ms;
+
+}
+
+.image-container-0 #bottle_wave{
+    position: absolute;
+    top: -8%;
+    right: 0%;
+}
+
+#bottle_wave{
+    width: 100%;
+}
+
+#section1{
+    padding: 7vw;
+    height: 60vw;
+}
+
+/* Main heading style with animation + animation delay */
+#main_heading{
+    text-align: center;
+    font-size:5vw;
+    position: absolute;
+    z-index: 1;
+    translate: 52% 15%;
+    transition-delay: 300ms;
+}
+
+#main_subheading{
+    text-align: center;
+    font-size: 2.2vw;
+    position: absolute;
+    translate: 68% 370%;;
+    color: white;
+    font-family: times;
+    transition-delay: 600ms;
+}
+
+.centered_header{
+    font-size: 3vw;
+    text-align: center;
+}
+
+/* general paragraph styling for all writing */
+.para{
+    font-size: 1.4vw;
+    font-weight: 100;
+    font-family: times;
+}
+
+.section3{
+    height: 89vw
+}
+
+/* paragraphing and titles for specific sections */
+#section1_para, #section3_para{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#section5_para{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+
+#section2_right-side{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 5vw;
+}
+
+#section2_left-side{
+    top: 5vw;
+}
+
+#section2{
+    height: 51vw;
+}
+
+#section2_para{
+    width: 50vw;
+}
+
+#section2_title{
+    float: right;
+    font-size: 10vw;
+    margin-bottom: 0;
+    /* color: white; */
+}
+
+#section4_flex{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5vw;
+}
+
+#section4_para{
+    width: 20%;
+    padding-right: 5vw;
+    margin-top: 7vw;
+    text-align: right;
+}
+
+#section4_para2{
+    text-align: center; 
+    position: relative;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-bottom: 4vw;
+}
+
+#line_graph{
+    margin: 0 auto;
+}
+
+#bg_image{
+    position:relative;
+    width: 100%;
+    border: 0;
+    opacity: 0.4;
+}
+
+.graph_container1{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#pasig_river_2{
+    width: 60%;
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+.image-container-2{
+    position: relative;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.image-container-2 #pasig_river_2{
+    position: absolute;
+    left: 40%;
+    top:50%;
+}
+
+#pasig_river_2{
+    width: 55%;
+}
+
+/* Styling for the pasig river title label */
+#pasig_river_label{
+    font-size: 2.6vw;
+    text-align: center;
+    padding-left: 0;
+    width: 60%;
+    position: relative;
+    left: 30%;
+    top: 10%
+}
+
+.horizontal_line{
+    background-color: white;
+    width: 100px;
+    height: 1px;
+    position:relative;
+    bottom:-4vw;
+}
+
+.vertical_line{
+    background-color: white;
+    width: 1px;
+    height: 100px;
+    position: relative;
+    left: 60%;
+}
+
+#pasig_label_container{
+    float: right;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#section4{
+    padding-bottom: 20vw;
+}
+
+/* Styling for the map of Manilla */
+#map{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15%;
+}
+
+.map_title{
+    font-size: 2vw;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-weight: 100;
+}
+
+/* Charity images flexbox */
+.charities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: stretch;
+    left: 20%;
+    padding-bottom: 5%;
+}
+
+/* Style each image in the flexbox of the charity image container */
+.charities img{
+    flex: 0 0 auto;
+  width: 65%;
+  padding: 2%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+#dolphin_top, #dolphin_bottom{
+    width:30%
+}
+
+.image-container-1{
+    position: relative;
+    border: 2px red;
+    margin-top: 0vw;
+    margin-left: 8vw;
+}
+
+.image-container-1 img{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+#charity_para{
+    padding: 0 15%;
+}
+
+/* contain chloropleth map */
+#chloropleth_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* style the charity names below the images */
+.fig-cap_charities{
+    color: white;
+    font-size: 14px;
+}
+
+#fig_cap_1{
+    margin-left:18%;
+}
+
+#fig_cap_2{
+    margin-left:9%;
+    margin-top: 9%
+}
+
+#fig_cap_3{
+    margin-left:27%;
+    margin-top: 2%
+}
+
+/* style the lists in the charity section */
+ul{
+    color: white;
+    padding: 2% 20% 0%;
+}
+
+li{
+    padding-bottom: 4%;
+}
