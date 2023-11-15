@@ -1,5 +1,5 @@
 // Unpack all the data from the csv and define the columns with variable names
-Plotly.d3.csv("../csv_files/section1.csv", (history_data) => {
+Plotly.d3.csv("https://raw.githubusercontent.com/isaacgrove1/plastic_ocean2/main/csv_files/section1.csv", (history_data) => {
     const year = unpack(history_data, 'year');
     const global_plastic_prod = unpack(history_data, 'global_plastic_prod');
     const macroplastic = unpack(history_data, 'macroplastic');
